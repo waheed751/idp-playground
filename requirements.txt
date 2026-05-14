@@ -2,10 +2,11 @@ altair==5.5.0
 antlr4-python3-runtime==4.9.3
 attrs==26.1.0
 aws-requests-auth==0.4.3
-awscli==1.45.6
+# awscli==1.45.6
 blinker==1.9.0
-boto3==1.34.0
-botocore==1.43.6
+boto3==1.43.7
+botocore==1.43.7
+s3transfer==0.17.0
 cachetools==5.5.2
 certifi==2026.4.22
 charset-normalizer==3.4.7
@@ -51,11 +52,10 @@ requests==2.31.0
 rich==13.9.4
 rpds-py==0.30.0
 rsa==4.7.2
-s3transfer==0.17.0
 shapely==2.1.2
 six==1.17.0
 smmap==5.0.3
-streamlit==1.35.0
+streamlit==1.45.0
 tenacity==8.5.0
 toml==0.10.2
 tornado==6.5.5
