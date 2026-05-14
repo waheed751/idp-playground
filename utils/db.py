@@ -40,8 +40,15 @@ def init_db():
             doc_type VARCHAR(50),
             filename VARCHAR(300),
             status VARCHAR(50) DEFAULT 'fulfilled',
+            result_json TEXT,
             created_at TIMESTAMP DEFAULT NOW()
         );
+    """)
+
+    # Safe to run every time — adds column if missing on existing DBs
+    cur.execute("""
+        ALTER TABLE job_history
+        ADD COLUMN IF NOT EXISTS result_json TEXT;
     """)
 
     cur.execute("SELECT COUNT(*) FROM users;")
