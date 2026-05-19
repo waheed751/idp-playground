@@ -1,2 +1,13 @@
 [ui]
 hideSidebarNav = true
+
+[server]
+headless = true
+
+[theme]
+base = "dark"
+primaryColor = "#2D7DD2"
+backgroundColor = "#0A0F1E"
+secondaryBackgroundColor = "#111827"
+textColor = "#F0F4F8"
+font = "sans serif"
