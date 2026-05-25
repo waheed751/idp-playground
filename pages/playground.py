@@ -131,7 +131,7 @@ with col_left:
 
         if run_validation and st.session_state["validation_result"] is None:
             if st.button("🔍 Validate document", use_container_width=True):
-                with st.spinner("Running local OCR to classify document..."):
+                with st.spinner("lassifying document..."):
                     from utils.classifier import validate_doc_type
                     pdf_bytes = uploaded_file.read()
                     uploaded_file.seek(0)
